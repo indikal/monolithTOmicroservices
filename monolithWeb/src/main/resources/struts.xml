@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+            "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+            "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+    <package name="monolith" extends="struts-default">
+        <action name="home">
+            <result>/index.jsp</result>
+        </action>
+        <action name="hello" class="lk.inli.monolith.HelloAction">
+            <result name="SUCCESS">/hello.jsp</result>
+            <result name="ERROR">/index.jsp</result>
+        </action>
+
+    </package>
+
+</struts>
+
