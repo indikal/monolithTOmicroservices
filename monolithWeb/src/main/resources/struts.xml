@@ -12,7 +12,14 @@
             <result name="SUCCESS">/hello.jsp</result>
             <result name="ERROR">/index.jsp</result>
         </action>
-
+        <action name="login" class="lk.inli.monolith.UserAction" method="login">
+            <result name="SUCCESS">/user.jsp</result>
+            <result name="ERROR">/index.jsp</result>
+        </action>
+        <action name="createUser" class="lk.inli.monolith.UserAction" method="createUser">
+            <result name="SUCCESS">/user.jsp</result>
+            <result name="ERROR">/index.jsp</result>
+        </action>
     </package>
 
 </struts>
